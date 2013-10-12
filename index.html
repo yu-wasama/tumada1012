@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Startup Weekdn Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Loading Bootstrap -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Loading Flat UI -->
+    <link href="css/flat-ui.css" rel="stylesheet">
+    <link href="css/demo.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <script type="text/javascript">
+    function func() {
+        alert('test');
+        var t = $('')
+    }
+    </script>
+
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-44793477-1', 'azurewebsites.net');
+  ga('send', 'pageview');
+
+</script>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="container">
+        <div class="demo-headline">
+            <h1 class="demo-logo">
+                <div class="logo"></div>
+                Web サービス
+                <small>Web サービスです</small>
+            </h1>
+        </div>
+        <!-- /demo-headline -->
+
+
+        <div class="row demo-tiles">
+            <div class="col-md-4 col-xs-12">
+                <div class="tile">
+                    <img src="images/icons/svg/compas.svg" alt="Compas" class="tile-image big-illustration">
+                    <h3 class="tile-title">早い</h3>
+                    <p>とても速いサービスを提供</p>
+                    <a class="btn btn-primary btn-large btn-block" href="http://designmodo.com/flat">Detail</a>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-xs-12">
+                <div class="tile">
+                    <img src="images/icons/svg/loop.svg" alt="Infinity-Loop" class="tile-image">
+                    <h3 class="tile-title">安い</h3>
+                    <p>お安く提供</p>
+                    <a class="btn btn-primary btn-large btn-block" href="http://designmodo.com/flat">Detail</a>
+                </div>
+            </div>
+
+
+            <div class="col-md-4 col-xs-12">
+                <div class="tile tile-hot">
+                    <img src="images/icons/svg/chat.svg" alt="Chat" class="tile-image">
+                    <h3 class="tile-title">うまい</h3>
+                    <p>呟きたくなるほどうまい</p>
+                    <a class="btn btn-primary btn-large btn-block" href="http://designmodo.com/flat">Detail</a>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="login">
+            <div class="login-screen">
+                <div class="login-icon">
+                    <img src="images/login/icon.png" alt="Welcome to Mail App" />
+                    <h4>
+                        <small>Startup Weekend</small>に登録！</h4>
+                </div>
+
+                <div class="login-form">
+                    <div class="form-group">
+                        <input type="text" class="form-control login-field" value="" placeholder="名前を入力してください" id="login-name" />
+                        <label class="login-field-icon fui-user" for="login-name"></label>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="password" class="form-control login-field" value="" placeholder="パスワード" id="login-pass" />
+                        <label class="login-field-icon fui-lock" for="login-pass"></label>
+                    </div>
+
+                    <a class="btn btn-primary btn-lg btn-block" onClick="func()">登録</a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class=" btn-group">
+                    <a href="https://twitter.com/share" class="twitter-share-button" data-via="tumada">Tweet</a>
+                    <script>
+                    ! function(d, s, id) {
+                        var js, fjs = d.getElementsByTagName(s)[0],
+                            p = /^http:/.test(d.location) ? 'http' : 'https';
+                        if (!d.getElementById(id)) {
+                            js = d.createElement(s);
+                            js.id = id;
+                            js.src = p + '://platform.twitter.com/widgets.js';
+                            fjs.parentNode.insertBefore(js, fjs);
+                        }
+                    }(document, 'script', 'twitter-wjs');
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /container -->
+
+
+    <!-- Load JS here for greater good =============================-->
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-select.js"></script>
+    <script src="js/bootstrap-switch.js"></script>
+    <script src="js/flatui-checkbox.js"></script>
+    <script src="js/flatui-radio.js"></script>
+    <script src="js/jquery.tagsinput.js"></script>
+    <script src="js/jquery.placeholder.js"></script>
+    <script src="js/jquery.stacktable.js"></script>
+    <script src="js/application.js"></script>
+</body>
+
+</html>
