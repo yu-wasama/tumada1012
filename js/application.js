@@ -16,6 +16,27 @@ String.prototype.repeat = function(num) {
   };
 
   $(function() {
+
+    //写真を消す
+    $("a.thumbnail").mouseup(function(){
+      $(this).fadeOut(2000).queue(function() {
+        this.remove();
+      });
+    });
+
+        // 「#droparea」エリアにドロップされた時の処理
+    $('#droparea').droppable({
+      accept: '.dragparts',
+      tolerance: 'touch',
+      hoverClass: "areahover",
+      activate: function(ev, ui){
+        var pos = ui.position;
+      },
+      drop: function(ev, ui){
+        ui.draggable.prependTo(this).removeClass('dragparts').addClass('dragparts_drop').css({top:'0',left:'0'});
+        dragParts();
+      }
+    });
   
     // Todo list
     $(".todo li").click(function() {

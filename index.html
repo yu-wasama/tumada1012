@@ -47,13 +47,6 @@
 <body>
 
     <div class="container">
-        <div class="demo-headline">
-            <h1 class="demo-logo">
-                <div class="logo"></div>
-                Web テスト
-                <small>Web サービスです</small>
-            </h1>
-        </div>
         <!-- /demo-headline -->
 
 
@@ -61,18 +54,18 @@
             <div class="col-md-4 col-xs-12">
                 <div class="tile">
                     <img src="images/icons/png/Compas.png" alt="Compas" class="tile-image big-illustration">
-                    <h3 class="tile-title">早い</h3>
-                    <p>とても速いサービスを提供</p>
-                    <a class="btn btn-primary btn-large btn-block" href="#">Detail</a>
+                    <h3 class="tile-title">Dropbox</h3>
+                    <p>Dropboxから</p>
+                    <a class="btn btn-primary btn-large btn-block" href="#">download</a>
                 </div>
             </div>
 
             <div class="col-md-4 col-xs-12">
                 <div class="tile">
                     <img src="images/icons/png/Map.png" alt="Infinity-Loop" class="tile-image">
-                    <h3 class="tile-title">安い</h3>
-                    <p>お安く提供</p>
-                    <a class="btn btn-primary btn-large btn-block" href="#">Detail</a>
+                    <h3 class="tile-title">Facebook</h3>
+                    <p>アルバム</p>
+                    <a class="btn btn-primary btn-large btn-block" href="#">download</a>
                 </div>
             </div>
 
@@ -80,98 +73,84 @@
             <div class="col-md-4 col-xs-12">
                 <div class="tile tile-hot">
                     <img src="images/icons/png/Chat.png" alt="Chat" class="tile-image">
-                    <h3 class="tile-title">うまい</h3>
-                    <p>呟きたくなるほどうまい</p>
-                    <a class="btn btn-primary btn-large btn-block" href="#">Detail</a>
+                    <h3 class="tile-title">Google+</h3>
+                    <p>アルバム</p>
+                    <a class="btn btn-primary btn-large btn-block" href="#">download</a>
                 </div>
 
             </div>
         </div>
-        <div class="bs-example">
+        <div id="dragitemlist" class="bs-example">
       <div class="row">
         <div class="col-sm-6 col-md-3">
-          <a href="#" class="thumbnail">
+          <a href="javascript:void(0);" class="thumbnail">
             <img data-src="holder.js/100%x180" alt="100%x180" src="images/demo/browser-pic-1.jpg" style="height: 180px; width: 100%; display: block;">
           </a>
+                                      <div class="form-group">
+                        <input type="text" class="form-control login-field" value="" placeholder="タイトルを入力" id="login-name" />
+                        <label class="" for="login-name"></label>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="password" class="form-control login-field" value="" placeholder="写真の説明を入力" id="login-pass" />
+                        <label class="" for="login-pass"></label>
+                    </div>
         </div>
+
         <div class="col-sm-6 col-md-3">
-          <a href="#" class="thumbnail">
-            <img data-src="holder.js/100%x180" alt="100%x180" src="" style="height: 180px; width: 100%; display: block;">
+          <a href="javascript:void(0);" class="thumbnail">
+            <img data-src="holder.js/100%x180" alt="100%x180" src="images/demo/browser-pic-2.jpg" style="height: 180px; width: 100%; display: block;">
           </a>
         </div>
         <div class="col-sm-6 col-md-3">
-          <a href="#" class="thumbnail">
-            <img data-src="holder.js/100%x180" alt="100%x180" src="" style="height: 180px; width: 100%; display: block;">
+          <a href="javascript:void(0);" class="thumbnail">
+            <img data-src="holder.js/100%x180" alt="100%x180" src="images/demo/browser-pic-3.jpg" style="height: 180px; width: 100%; display: block;">
           </a>
         </div>
         <div class="col-sm-6 col-md-3">
-          <a href="#" class="thumbnail">
-            <img data-src="holder.js/100%x180" alt="100%x180" src="" style="height: 180px; width: 100%; display: block;">
+          <a href="javascript:void(0);" class="thumbnail">
+            <img data-src="holder.js/100%x180" alt="100%x180" src="images/demo/browser-pic-4.jpg" style="height: 180px; width: 100%; display: block;">
           </a>
         </div>
       </div>
     </div>
 
-
-        <div class="login">
-            <div class="login-screen">
-                <div class="login-icon">
-                    <img src="images/login/icon.png" alt="Welcome to Mail App" />
-                    <h4>
-                        <small>Startup Weekend</small>に登録！</h4>
-                </div>
-
-                <div class="login-form">
-                    <div class="form-group">
-                        <input type="text" class="form-control login-field" value="" placeholder="名前を入力してください" id="login-name" />
-                        <label class="login-field-icon fui-user" for="login-name"></label>
-                    </div>
-
-                    <div class="form-group">
-                        <input type="password" class="form-control login-field" value="" placeholder="パスワード" id="login-pass" />
-                        <label class="login-field-icon fui-lock" for="login-pass"></label>
-                    </div>
-
-                    <a class="btn btn-primary btn-lg btn-block" onClick="func()">登録</a>
-                    <div id="login-after" class="login-link" href="#"></div>
-                </div>
+<div class="bs-example">
+      <div class="row">
+        <div class="col-sm-6 col-md-3">
+          <div class="thumbnail">
+            <img data-src="holder.js/300x200" alt="300x200" src="images/demo/browser-pic-5.jpg" style="width: 300px; height: 200px;">
+            <div class="caption">
+              <h3>12歳の決意</h3>
+              <p>暮れゆく夕日の中、僕は思った。「犬になりたい」と。</p>
+              <p><a href="#" class="btn btn-primary">アップロード</a> <a href="#" class="btn btn-default">不要</a></p>
             </div>
+          </div>
         </div>
-
-
-
-        
-        <div class="row">
-            <div class="col-md-8">
-                <img src="images/blu.jpg" alt="exaple-image" class="img-rounded img-responsive">
+        <div class="col-sm-6 col-md-3">
+          <div class="thumbnail">
+            <img data-src="holder.js/300x200" alt="300x200" src="images/demo/browser-pic-6.jpg" style="width: 300px; height: 200px;">
+            <div class="caption">
+              <h3>電車まだかな</h3>
+              <p>都会だとあまりないですが、電車って意外とこないんです</p>
+              <p><a href="#" class="btn btn-primary">アップロード</a> <a href="#" class="btn btn-default">不要</a></p>
             </div>
-            <div class="col-md-4">
-                <blockquote>
-                    <p>私の Blu-ray</p>
-                    <small>Takaaki Umada</small>
-                </blockquote>
-            </div>
+          </div>
         </div>
-
-        <div class="row">
-            <div class="col-md-12">
-                <div class=" btn-group">
-                    <a href="https://twitter.com/share" class="twitter-share-button" data-via="tumada">Tweet</a>
-                    <script>
-                    ! function(d, s, id) {
-                        var js, fjs = d.getElementsByTagName(s)[0],
-                            p = /^http:/.test(d.location) ? 'http' : 'https';
-                        if (!d.getElementById(id)) {
-                            js = d.createElement(s);
-                            js.id = id;
-                            js.src = p + '://platform.twitter.com/widgets.js';
-                            fjs.parentNode.insertBefore(js, fjs);
-                        }
-                    }(document, 'script', 'twitter-wjs');
-                    </script>
-                </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="thumbnail">
+            <img data-src="holder.js/300x200" alt="300x200" src="images/demo/browser-pic-1.jpg" style="width: 300px; height: 200px;">
+            <div class="caption">
+              <h3>いつ買うか？</h3>
+              <p>iPhone5です＾＾</p>
+              <p><a href="#" class="btn btn-primary">アップロード</a> <a href="#" class="btn btn-default">不要</a></p>
             </div>
+          </div>
         </div>
+      </div>
+    </div>
+
+
         <!-- /container -->
 
 
